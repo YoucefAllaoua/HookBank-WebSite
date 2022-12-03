@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #00040f;
+	font-family: "Poppins", sans-serif;
+}
+@media (max-width: 768px) {
+	header ul {
+		background: rgba(29, 218, 233, 0.15);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		backdrop-filter: blur(5.5px);
+		-webkit-backdrop-filter: blur(5.5px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+	}
+}
+@media (max-width: 767px) {
+	header ul {
+		left: 150%;
+	}
+	ul.shown {
+		left: 0;
+	}
+}
+
+.linear {
+	background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+.text-gradient {
+	background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-transform: uppercase;
+}
+.circle_rounded {
+	background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.linear_gradient_circle {
+	background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #a897ec 100%);
+	filter: blur(375px);
+	opacity: 0.4;
+	width: 100%;
+	height: 471px;
+	position: absolute;
+	top: -50%;
+	left: 0;
+	height: 100%;
+}
+.linear_gradient_rectangle {
+	background: rgba(255, 255, 255, 0.6);
+	filter: blur(375px);
+	opacity: 0.2;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+.linear_gradient_rectangle_bottom {
+	background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+	position: absolute;
+	bottom: 200px;
+	height: 60%;
+	width: 100%;
+	filter: blur(450px);
+}
+.stat_element::before {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 2px;
+	height: 30%;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: gray;
+}
+.linear_background {
+	background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+}
+
+.busines_element:hover,
+.element_testimonilas:hover {
+	background: linear-gradient(110.53deg, #ffffff -265.46%, #14101d 96.75%);
+	box-shadow: 4px 6px 30px rgba(19, 36, 46, 0.25);
+}
+.try {
+	background: linear-gradient(-144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+	backdrop-filter: blur(5px);
+
+	border-radius: 20px;
+}
+.animated::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #00040f;
+	border-left: solid 4px cyan;
+	animation: animate 8s steps(12) infinite;
+}
+@keyframes animate {
+	40%,
+	60% {
+		left: 100%;
+	}
+	100% {
+		left: 0;
+	}
+}
